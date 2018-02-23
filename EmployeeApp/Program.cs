@@ -11,14 +11,16 @@ namespace EmployeeApp
         static void Main(string[] args)
         {
             Console.WriteLine("***** Fun with Encapsulation *****\n");
-            Employee emp = new Employee("Marvin, 456, 30000");
+            Employee emp = new Employee("Marvin", 25, 456, 30000, "socialsec");
             emp.GiveBonus(1000);
             emp.DisplayStats();
 
             // get / set
-            emp.SetName("Marv");
-            Console.WriteLine("Employee is named: {0}", emp.GetName());
+            emp.Name = "Marv";
+            Console.WriteLine("Employee is named: {0}", emp.Name);
             Console.ReadLine();
+
+
         }
     }
 }
